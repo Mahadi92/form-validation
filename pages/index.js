@@ -6,9 +6,9 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target)
+    console.log(e.target[1])
     const arrOfObj = Object.keys(e.target)
-    const filter = arrOfObj.filter((data) => { !isNaN(data) === true })
+    const filter = arrOfObj.filter((data) => { !isNaN(data) })
     // console.log(!isNaN(arrOfObj[2]))
     console.log(filter)
   }
