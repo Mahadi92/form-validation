@@ -6,11 +6,11 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(e.target)
     const arrOfObj = Object.keys(e.target)
-    arrOfObj.filter((data) => {
-
-    })
-
+    const filter = arrOfObj.filter((data) => { !isNaN(data) === true })
+    // console.log(!isNaN(arrOfObj[2]))
+    console.log(filter)
   }
 
   return (
